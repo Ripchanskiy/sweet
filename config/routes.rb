@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get 'conversations/:id' => 'conversations#show'
   resources :messages
   root 'welcome#index'
+
+  get 'test' => 'tester#index'
 end
