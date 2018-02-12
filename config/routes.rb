@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :boys
-  devise_for :girls
+  devise_for :boys#, controllers: { sessions: :sessions }
+  devise_for :girls#, controllers: { sessions: :sessions }
   get 'welcome/index'
   get 'main' => 'logged#index'
   get 'main_boy' => 'main_boy#index'
